@@ -27,13 +27,16 @@ line in vector, both must be consistent
 
 int main(void){
 
+	/*
+		Nova branch criada para teste de codigos
+	*/
+
 	char vector[ LINE*LINE ];
 
 	for (int i = 0; i < LINE*LINE; i++)
 	{
 		vector[i] = rand() % 2 == 0 ? '0':'1';
 	}
-	
 
 	analyze(vector, LINE);
 
