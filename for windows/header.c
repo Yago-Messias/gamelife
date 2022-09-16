@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "header.h"
+#include <stdlib.h>
+
+#define COST 10
+#define USER 0
+#define ERROR 1
 
 
 /*	Buffer of main vector
@@ -41,8 +46,8 @@ void show(char vector[], int size){
 			printf("\n");
 		}
 		// Permute '1' or '0' by ' # ' and '  '
-		if (vector[i] == '1') printf(" @ ");
-		else printf("   ");
+		if (vector[i] == '1') printf(".");
+		else printf(" ");
 
 		cont ++;
 
@@ -116,7 +121,7 @@ void analyze(char vector[], int size){
 
 			// Delay time
 					
-			for(t = 0; t<2000000; t++);
+			for(t = 0; t<20000; t++);
 
 
 		}// End while
